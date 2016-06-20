@@ -7,9 +7,10 @@ RSpec.describe Api::V1::AlbumsController, type: :controller do
     it "returns an index of albums in the JSON format" do
       get :index, format: :json
       json = JSON.parse(response.body)
+      title = json["data"].first["attributes"]["title"]
 
       expect(json).to_not be_empty
-      expect(json.first["title"]).to eq(albums.last.title)
+      expect(title).to eq(albums.last.title)
     end
 
     it "returns an index of albums in the XML format" do
