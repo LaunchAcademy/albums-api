@@ -1,0 +1,11 @@
+<h1>Albums</h1>
+
+<% @albums.each do |album| %>
+  <div class="album">
+    <h3><%= album.artist %></h3>
+    <h5><%= album.title %></h5>
+    <p>
+      <%= image_tag album.display_image, width: 128 %>
+    </p>
+  </div>
+<% end %>

@@ -4,6 +4,7 @@ class CreateAlbums < ActiveRecord::Migration
       t.string :title, null: false
       t.string :artist, null: false
       t.integer :year
+      t.text :image
       t.timestamps null: false
     end
   end

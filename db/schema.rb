@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160620135021) do
     t.string   "title",      null: false
     t.string   "artist",     null: false
     t.integer  "year"
+    t.text     "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
