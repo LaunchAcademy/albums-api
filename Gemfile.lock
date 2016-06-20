@@ -188,7 +188,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   dotenv-rails
-  factory_girl_rails
+  factory_girl_rails (~> 4.0)
   jquery-rails
   launchy
   pg
@@ -201,6 +201,9 @@ DEPENDENCIES
   shoulda
   uglifier (>= 1.3.0)
   valid_attribute
+
+RUBY VERSION
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.12.5
